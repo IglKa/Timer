@@ -10,7 +10,9 @@ Requirements:
 
 Classes:
 	Timer(private CalcTime,
-	      public ShowTime, public SetTime, public Start, public Stop)
+	      public SetTime, 
+              public Start, 
+	      public Stop)
 
 	Responsibilities:
 		Must initialize passed settings of time(study, rest) and write them down to file
