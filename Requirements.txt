@@ -1,0 +1,18 @@
+Requirements:
+	UI:
+		Time must be presented in console
+		Time settings can be selected when timer is off/expired.
+		User choose whenever he wants to start timer.
+	UX:
+		Timer must play sounds after it's expired.
+		User can stop timer whenever he wants to.
+		Time settings must be saved and used even after its(timer) closed. 
+
+Classes:
+	Timer(private CalcTime,
+	      public ShowTime, public SetTime, public Start, public Stop)
+
+	Responsibilities:
+		Must initialize passed settings of time(study, rest) and write them down to file
+		either should take previous time settings.
+		Must write time in console when started. Time can be stoped, but timer shouldn't.
