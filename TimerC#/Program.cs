@@ -2,7 +2,7 @@
 using ConsoleTimer;
 
 
-namespace ConsoleTimer
+namespace Main
 {
     internal class Program
     {
