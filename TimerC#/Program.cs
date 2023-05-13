@@ -1,7 +1,8 @@
-﻿using TimerC_;
+﻿using System;
+using TimerC_;
 
 
-namespace ConsolTimer
+namespace ConsoleTimer
 {
     internal class Program
     {

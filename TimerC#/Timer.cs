@@ -34,7 +34,8 @@ namespace TimerC_
 
         private void CountTime(TimeSpan Time)
         {
-            while (Time > TimeSpan.Zero)
+            var zero = TimeSpan.Zero;
+            while (Time > zero)
             {
                 Time -= new TimeSpan(00, 00, 01);
                 Console.WriteLine(Time);
