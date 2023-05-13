@@ -1,5 +1,5 @@
 ﻿using System;
-using TimerC_;
+using ConsoleTimer;
 
 
 namespace ConsoleTimer
@@ -9,11 +9,11 @@ namespace ConsoleTimer
         static void Main(string[] args)
         {
             Console.WriteLine("How many minutes to study? (integers only)");
-            string MinsToStudy = Console.ReadLine();
+            int MinsToStudy = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("What is your rest time? (integers only)");
-            string MinsToRest = Console.ReadLine();
+            int MinsToRest = Convert.ToInt32(Console.ReadLine());
 
-            var timer = new TimerC_.Timer(MinsToStudy, MinsToRest);
+            var timer = new ConsoleTimer.Timer(MinsToStudy, MinsToRest);
 
             timer.Start();
         }
