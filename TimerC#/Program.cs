@@ -1,5 +1,6 @@
 ﻿using System;
-using ConsoleTimer;
+using Base;
+using Timer;
 
 
 namespace Main
@@ -13,9 +14,9 @@ namespace Main
             Console.WriteLine("What is your rest time? (integers only)");
             int MinsToRest = Convert.ToInt32(Console.ReadLine());
 
-            var timer = new ConsoleTimer.Timer(MinsToStudy, MinsToRest);
+            AbstractTimer timer = new ConsoleTimer(MinsToStudy, MinsToRest);
 
-            timer.Start();
+            timer.StartTimer();
         }
     }
 }
